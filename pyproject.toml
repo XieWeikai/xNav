@@ -1,0 +1,21 @@
+[project]
+name = "xnav"
+version = "0.1.0"
+description = "navigation model for uav"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "diffusers>=0.35.2",
+    "opencv-python>=4.12.0.88",
+    "torch",
+    "torchvision",
+    "transformers>=4.57.1",
+    "xformers>=0.0.32.post2",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["xnav"]
